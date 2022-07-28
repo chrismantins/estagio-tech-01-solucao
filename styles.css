@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #E3313C;
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: 250ms;
+}
+.navigation a:hover {
+  text-decoration: underline;
+  color: #EE838A;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 300px;
+  margin: 50px auto;
+}
+.product h4 {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #32333A;
+  padding: 20px;
+}
+.product p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #32333A;
+  margin-bottom: 50px;
+}
+.product button {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background: #E3313C;
+  min-width: 90px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 25px;
+  margin: 0;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+.product button:hover {
+  background: #EE838A;
+}
+.product button:focus {
+  outline: 4px solid #FCBAC6;
+  outline-offset: -4px;
+}
+
+.favorite-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.favorite-form h4 {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #32333A;
+  padding: 20px;
+}
+.favorite-form input, .favorite-form select {
+  width: 290px;
+  height: 40px;
+  border: 1px solid #F4F4F6;
+  border-radius: 10px;
+  background: #F4F4F6;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #8E93A5;
+  text-align: center;
+  transition: all 250ms ease-in-out, transform 150ms ease;
+  margin-bottom: 20px;
+}
+.favorite-form input:focus, .favorite-form input:focus-visible, .favorite-form input:active, .favorite-form select:focus, .favorite-form select:focus-visible, .favorite-form select:active {
+  background: #ffffff;
+  border-color: #DDDFE4;
+}
+.favorite-form .actions-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 290px;
+}
+.favorite-form button {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background: #E3313C;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  min-width: 90px;
+  height: 40px;
+  padding: 12px 25px;
+  margin: 0;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+.favorite-form button:hover {
+  background: #EE838A;
+}
+.favorite-form button:focus {
+  outline: 4px solid #FCBAC6;
+  outline-offset: -4px;
+}
+.favorite-form button[type=reset] {
+  background: #6086B1;
+}
+.favorite-form button[type=reset]:focus {
+  outline-color: #A0B6D0;
+}
+
+/*# sourceMappingURL=styles.css.map */

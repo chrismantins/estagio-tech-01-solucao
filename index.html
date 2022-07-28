@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navigation">
+    <a href="#">Home</a>
+    <a href="#">Favoritos</a>
+    <a href="#">Meu Perfil</a>
+    <a href="#">Configurações</a>
+  </nav>
+
+  <section class="product">
+    <h4>Meu Produto</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et bibendum lectus. Nulla nisi sem, interdum lobortis nulla id, facilisis ultrices nibh. Sed ut nulla et orci euismod fermentum a ac tellus. Aenean et malesuada erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae hendrerit massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse feugiat tellus vel risus laoreet accumsan. Duis molestie mauris at placerat suscipit. Fusce eget tellus rutrum velit sollicitudin rhoncus.</p>
+    <button>Comprar</button>
+  </section>
+
+  <section>
+    <form action="#" class="favorite-form">
+      <h4>Favoritar Item</h4>
+      <input type="text" name="input-name" id="input-name">
+      <input type="text" name="input-email" id="input-email">
+      <select name="select-favorite" id="select-favorite">
+        <option value="" selected disabled hidden>Escolha o favorito</option>
+        <option value="favorite-1">Favorito 1</option>
+        <option value="favorite-2">Favorito 2</option>
+        <option value="favorite-3">Favorito 3</option>
+      </select>
+      <div class="actions-form">
+        <button type="reset" id="reset-favorite-form">Limpar</button>
+        <button type="submit" id="send-favorite-form">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+<script>
+    var sendFavoriteForm = document.getElementById("send-favorite-form");
+    sendFavoriteForm.addEventListener("click", function(event){
+      event.preventDefault()
+    });
+  </script>
+  
+</body>
+</html>
